@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fromulário</title>
+</head>
+<body>
+    <h1>Teste</h1>  <!--apple não tem suporte no navagador de desktop, voce consegue digitar letras em input number e outros, seria necessario o js para corrigir esses controles-->
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p> <!--Para o label do tipo text é usado minlenght e maxlength -->
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0-10" step="0.5" value="5"> 
+        </p>  <!-- Para o label do tipo number é usado min e max -->
+        <p>
+            <label for="imes">Periodo letivo</label>
+            <input type="month" name="mes" id="imes" value="2020-07">
+            <!-- value mostra como se fosse um placeholder (sugere) 
+            - Não é compatível com o firefox-->
+        </p>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia" value="2020-07-14">
+        </p>
+        <p>
+            <label for="ihora">Hora da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
