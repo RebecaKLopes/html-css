@@ -3,5 +3,6 @@
 /* em pé*/
 
 body{
-    background-color: rgba(236, 236, 161, 0.589);
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom;
 }
