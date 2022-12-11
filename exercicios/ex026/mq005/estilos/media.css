@@ -6,11 +6,16 @@
     }
 
     menu{
+        text-align: center;
         display: block;
     }
 
     menu > ul > li{
         display: inline-block;
         width: 150px;
+    }
+
+    main{
+        width: 768px;
     }
 }
